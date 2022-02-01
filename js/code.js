@@ -109,10 +109,17 @@ console.log(fourth_array);
 //     console.log('Second iteration ' + fourth_array[i]);
 // }
 
-// for (;i >= 0; i--) {
-//     console.log('Third iteration ' + fourth_array[i]);
-// }
+var i = fourth_array.length;
+ for (;i >= 0; i--) {
+     console.log('Third iteration ' + fourth_array[i]);
+ }
 
-fourth_array.forEach(function(element) {
-    console.log('Fourth iteration ' + element);
-});
+//fourth_array.forEach(function(element) {
+//    console.log('Fourth iteration ' + element);
+//});
+
+let today = new Date();
+let first_october = new Date(2019, 10, 1);
+console.log(today);
+console.log(first_october);
+console.log(today.getDay());//Devuelve el número del día de la semana
